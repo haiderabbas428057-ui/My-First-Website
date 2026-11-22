@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Proposal - Gemstone Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gem-gradient {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-poppins">
+    <!-- Navigation -->
+    <nav class="gem-gradient text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-red-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-gem text-white"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold font-playfair">Gemstone<span class="text-yellow-400">Pro</span></h1>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="px-4 py-2 bg-blue-600 rounded-lg font-semibold">
+                        <i class="fas fa-file-alt mr-2"></i>Proposal
+                    </a>
+                    <a href="gems.html" class="px-4 py-2 hover:bg-gray-700 rounded-lg transition">
+                        <i class="fas fa-gem mr-2"></i>Project
+                    </a>
+                    <a href="portfolio.html" class="px-4 py-2 hover:bg-gray-700 rounded-lg transition">
+                        <i class="fas fa-user-circle mr-2"></i>Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden bg-gradient-to-r from-purple-900 to-blue-900 text-white py-16">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1614726365952-510103b1bbb4?q=80&w=1000'); background-size: cover;"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-5xl font-bold font-playfair mb-6">Gemstone Project Proposal</h1>
+                <p class="text-xl text-gray-200 mb-8">An innovative online platform for exploring and purchasing authentic gemstones with detailed information and visual representation</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">Web Technologies</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">HTML & Tailwind CSS</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">Student Project</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Project Info -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-red-500 to-pink-600 flex items-center justify-center mr-4">
+                        <i class="fas fa-user-graduate text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Student Information</h2>
+                        <p class="text-gray-600">Haider Abbas - 24-ARID-756</p>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Course Details</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-book text-blue-500 mr-3"></i> Web Technologies</li>
+                        <li class="flex items-center"><i class="fas fa-calendar text-green-500 mr-3"></i> Fall Semester 2024</li>
+                        <li class="flex items-center"><i class="fas fa-tasks text-purple-500 mr-3"></i> Final Project Assignment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-600 flex items-center justify-center mr-4">
+                        <i class="fas fa-lightbulb text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Project Title</h2>
+                        <p class="text-3xl font-bold text-blue-600">Online Gemstone Store</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    This project aims to create a comprehensive online platform where users can explore, view detailed information, and purchase authentic gemstones with confidence.
+                </p>
+            </div>
+        </div>
+
+        <!-- Problem Statement -->
+        <div class="bg-gradient-to-r from-red-50 to-pink-50 border border-red-100 rounded-xl shadow-lg p-8 mb-12 card-hover">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-r from-red-600 to-pink-700 flex items-center justify-center mr-4">
+                    <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">Problem Statement</h2>
+                    <p class="text-gray-600">Identifying the current market challenges</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-inner">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Currently, customers face significant difficulties when searching for authentic gemstones online. The market lacks reliable platforms that provide comprehensive information, high-quality visual representation, and trustworthy authentication. Customers often struggle with:
+                </p>
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-3"></i> Lack of detailed gemstone information and specifications</li>
+                    <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-3"></i> Poor quality images that don't accurately represent the gemstones</li>
+                    <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-3"></i> Difficulty verifying authenticity and quality certifications</li>
+                    <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-3"></i> Limited filtering and comparison options</li>
+                    <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-3"></i> Unclear pricing and purchase processes</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Objectives -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Project Objectives</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-store text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Online Platform</h3>
+                    <p class="text-gray-600">Develop a responsive and user-friendly online store for gemstones with secure payment integration.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-cyan-600 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-info-circle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Detailed Information</h3>
+                    <p class="text-gray-600">Provide comprehensive details including origins, properties, prices, and high-quality images for each gemstone.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Advanced Search</h3>
+                    <p class="text-gray-600">Implement intuitive searching and filtering by type, price, color, and rarity for easy navigation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-100 rounded-xl shadow-lg p-8 mb-12 card-hover">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Tools & Technologies</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-white rounded-xl shadow-md p-6 text-center w-40">
+                    <i class="fab fa-html5 text-6xl text-orange-500 mb-4"></i>
+                    <h3 class="font-bold text-lg">HTML5</h3>
+                    <p class="text-gray-600 text-sm">Structure</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 text-center w-40">
+                    <i class="fab fa-css3-alt text-6xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-lg">Tailwind CSS</h3>
+                    <p class="text-gray-600 text-sm">Styling</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 text-center w-40">
+                    <i class="fab fa-js-square text-6xl text-yellow-500 mb-4"></i>
+                    <h3 class="font-bold text-lg">JavaScript</h3>
+                    <p class="text-gray-600 text-sm">Interactivity</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="text-center mb-12">
+            <div class="inline-flex flex-col sm:flex-row gap-6">
+                <a href="gems.html" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full hover:from-purple-600 hover:to-blue-600 transition-all duration-300 font-bold text-lg shadow-lg transform hover:-translate-y-1 flex items-center justify-center">
+                    <i class="fas fa-arrow-right mr-3"></i> View Project Page
+                </a>
+                <a href="portfolio.html" class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full hover:from-teal-600 hover:to-emerald-500 transition-all duration-300 font-bold text-lg shadow-lg transform hover:-translate-y-1 flex items-center justify-center">
+                    <i class="fas fa-user-circle mr-3"></i> View Portfolio
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="gem-gradient text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-red-500 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-gem text-white"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold font-playfair">Gemstone<span class="text-yellow-400">Pro</span></h2>
+                    </div>
+                    <p class="text-gray-300">Web Technologies Assignment - Haider Abbas (24-ARID-756)</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Proposal</a>
+                    <a href="gems.html" class="text-gray-300 hover:text-white transition">Project</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:text-white transition">Portfolio</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Gemstone Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
